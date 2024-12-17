@@ -1,0 +1,243 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column; /* สำหรับเนื้อหาหลายส่วน */
+}
+
+header {
+  background-color: #4a90e2;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h2 {
+  color: #4a90e2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+
+th {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1faff;
+}
+
+/* Links */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Logout Button */
+.container a[href="../controller/logout.php"] {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #e94e77;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.container a[href="../controller/logout.php"]:hover {
+  background-color: #c83e61;
+}
+
+/* Form Styles */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #357ab8;
+}
+
+form a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+form h2 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Select Box Styles */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #333;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+option {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #357ab8;
+}
+
+/* Input file */
+input[type="file"] {
+  display: none;
+}
+
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e94e77;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.file-upload-label:hover {
+  background-color: #c83e61;
+}
